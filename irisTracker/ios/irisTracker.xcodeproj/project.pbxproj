@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* irisTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* irisTrackerTests.m */; };
-		06FF57EF26712AE7007E71E0 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF57EE26712AE7007E71E0 /* Camera.swift */; };
 		06FF57F126712AF9007E71E0 /* TestTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF57F026712AF9007E71E0 /* TestTrackerViewController.swift */; };
 		06FF57F326712B35007E71E0 /* SampleAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF57F226712B35007E71E0 /* SampleAppManager.swift */; };
 		06FF57F526712B3D007E71E0 /* SampleAppManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FF57F426712B3D007E71E0 /* SampleAppManagerBridge.m */; };
 		06FF5805267137E1007E71E0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FF5804267137E1007E71E0 /* art.scnassets */; };
 		06FF580C267144F8007E71E0 /* IrisTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FF58062671448F007E71E0 /* IrisTracker.framework */; };
 		06FF580D267144F8007E71E0 /* IrisTracker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06FF58062671448F007E71E0 /* IrisTracker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06FF58112671486D007E71E0 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF58102671486D007E71E0 /* Camera.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -52,12 +52,12 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* irisTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irisTrackerTests.m; sourceTree = "<group>"; };
 		066CB21326703DB7002E561E /* irisTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "irisTracker-Bridging-Header.h"; sourceTree = "<group>"; };
-		06FF57EE26712AE7007E71E0 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Camera.swift; path = ../../../Desktop/trainingapp/ios/Camera.swift; sourceTree = "<group>"; };
 		06FF57F026712AF9007E71E0 /* TestTrackerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTrackerViewController.swift; sourceTree = "<group>"; };
 		06FF57F226712B35007E71E0 /* SampleAppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAppManager.swift; sourceTree = "<group>"; };
 		06FF57F426712B3D007E71E0 /* SampleAppManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleAppManagerBridge.m; sourceTree = "<group>"; };
 		06FF5804267137E1007E71E0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		06FF58062671448F007E71E0 /* IrisTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IrisTracker.framework; sourceTree = "<group>"; };
+		06FF58102671486D007E71E0 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* irisTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = irisTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = irisTracker/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = irisTracker/AppDelegate.m; sourceTree = "<group>"; };
@@ -126,7 +126,6 @@
 			children = (
 				06FF5804267137E1007E71E0 /* art.scnassets */,
 				06FF57FC26712D97007E71E0 /* RNBridge */,
-				06FF57EE26712AE7007E71E0 /* Camera.swift */,
 				06FF57F026712AF9007E71E0 /* TestTrackerViewController.swift */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -135,6 +134,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				066CB21326703DB7002E561E /* irisTracker-Bridging-Header.h */,
+				06FF58102671486D007E71E0 /* Camera.swift */,
 			);
 			name = irisTracker;
 			sourceTree = "<group>";
@@ -456,9 +456,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06FF57EF26712AE7007E71E0 /* Camera.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				06FF57F526712B3D007E71E0 /* SampleAppManagerBridge.m in Sources */,
+				06FF58112671486D007E71E0 /* Camera.swift in Sources */,
 				06FF57F126712AF9007E71E0 /* TestTrackerViewController.swift in Sources */,
 				06FF57F326712B35007E71E0 /* SampleAppManager.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
